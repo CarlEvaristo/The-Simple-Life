@@ -5,31 +5,25 @@ html {
 body{
     text-align: center;
     margin:0;
+    font-weight: light;
     color: #707070;
     font-family: 'Ubuntu', sans-serif;
     letter-spacing: 0.05em;
  }
 
-.container{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width:90%;
-    max-width: 975px;
-    margin: 0 auto;
-}
+ /*=====================
+        TYPOGRAPHY 
+========================*/
 
-header{
-    background:#f8f8f8;
-    padding:50px 0;
-    margin-bottom: 40px;
-}
 h1{ 
     margin:0;
     font-family: 'Playfair Display', serif;
     font-size:3.6rem;
     font-weight:400;
     color:#143774;
+}
+strong {
+    font-weight:700;
 }
 .subtitle {
     margin:0.2em 0 0;
@@ -48,10 +42,49 @@ h2 {
     font-weight:400;
     color:#143774;
 }
+h3{
+    text-transform: uppercase;
+    color: #143774;
+    font-size:2.5rem;
+    font-weight: bold;
+    margin-top:0;
+}
+h4 {
+    font-family: 'Playfair Display', serif;
+    font-size:2rem;
+    font-weight:400;
+    color:#143774;
+}
 p{
     line-height: 1.5em;
     font-size: 1.8rem; 
 }
+.continue-txt {
+    display:block;
+    text-transform: uppercase;
+    color: #1792D2;
+    letter-spacing: 0.2em;
+    font-size:1.4rem;
+    font-weight: bold;
+    margin: 1.5em 0;
+    text-decoration: none;
+}
+.photo-txt {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    font-size:1.4rem;
+}
+
+ /*=======================
+        HEADER LAYOUT 
+==========================*/
+
+header{
+    background:#f8f8f8;
+    padding: 2em 0;
+    margin-bottom: 40px;
+}
+
 .nav-list {
     padding:0;
     width: 350px;
@@ -86,16 +119,24 @@ p{
     color:#707070;
 }
 
+/*=======================
+        MAIN LAYOUT 
+==========================*/
 
+.container{
+    display:flex;
+    justify-content: space-between;
+    width:90%;
+    max-width: 975px;
+    margin: 0 auto;
+}
 main {
-    /* border: 3px solid magenta; */
     width: 70%;
 }
 .main-article {
     text-align: left;
     padding-bottom: 3em;
 }
-
 .main-img {
     width: 100%;
     height:308px;
@@ -103,26 +144,6 @@ main {
     object-position: 0 100%;
     margin-bottom: 1.5em;
 }
-.photo-txt {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: left;
-    font-size:1.4rem;
-}
-.accent-text {
-    color: #1792D2;
-    text-decoration: underline;
-}
-.continue-txt {
-    display:block;
-    text-transform: uppercase;
-    color: #1792D2;
-    letter-spacing: 0.2em;
-    font-size:1.4rem;
-    font-weight: bold;
-    margin: 1.5em 0;
-    text-decoration: none;
-}
-
 article hr {
     border: none;
     border-top: 1px solid lightgray;
@@ -153,22 +174,18 @@ article hr {
     object-position: 50% 50%;
 }
 
+/*=======================
+        SIDEBAR LAYOUT 
+==========================*/
+
 .sidebar{
     /* border: 3px solid blue; */
     width: 25%;
 }
-
 .sidebar-box {
     border: 20px #EBEBEB solid;
     padding: 20px;
     text-align: left;
-}
-h3{
-    text-transform: uppercase;
-    color: #143774;
-    font-size:2.5rem;
-    font-weight: bold;
-    margin-top:0;
 }
 .sidebar-box-img {
     width:100%;
@@ -182,16 +199,13 @@ h3{
     margin:0;
     margin-top:1.5em;
 }
-
-h4 {
-    font-family: 'Playfair Display', serif;
-    font-size:2rem;
-    font-weight:400;
-    color:#143774;
-}
-.post {
+/* .post {
     margin-top: 3em;
-}
+} */
+
+/*=======================
+        FOOTER LAYOUT 
+==========================*/
 
 footer {
     background: #143774;
@@ -199,7 +213,6 @@ footer {
     padding: 2em 0;
     font-size: 3em;
     font-weight: bold;
-
 }
 footer p {
     margin:0;
@@ -208,13 +221,24 @@ footer p {
     font-weight: 200;
 }
 
+ /*=======================
+       UTILITY CLASSES 
+==========================*/
+
 .img-left-aligned {
     object-position: 10% 50%;
 }
 .img-center-aligned {
     object-position: 50% 50%;
 }
+.accent-text {
+    color: #1792D2;
+    text-decoration: underline;
+}
 
+ /*=======================
+       MEDIA QUERIES 
+==========================*/
 
 @media (max-width:1000px) {
     .container {
